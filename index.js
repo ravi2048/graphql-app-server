@@ -11,7 +11,7 @@ connectDb();
 
 const app = express();
 app.use(cors({
-    origin: '*',
+    origin: 'https://pma-graphql-backend.onrender.com',
 }));
 app.use('/graphql', graphqlHTTP({
     schema: schema,
